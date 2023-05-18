@@ -1,0 +1,235 @@
+:root{
+    --header-font-color: #cd7e5e;
+    --gradient: linear-gradient(to bottom right, rgb(252, 238, 209), rgb(238, 217, 224), rgb(252, 181, 171), rgb(247,157,145));
+}
+
+/* TEN KOD MA BYC UMIESZCZONY W WSPOLNYM PLIKU */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Cormorant', serif;
+  line-height: 1.6;
+}
+
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 100px;
+  padding-bottom: 10px;
+  /* TEN FRAGMENT KODU GDYBY JEDNAK NIE CZARNA CZCIONKA A GRADIENTOWA
+  background: var(--gradient);
+  color: transparent;
+  -webkit-background-clip: text; */ 
+}
+a{
+  text-decoration: none;
+  color: #000000; 
+}
+
+p{
+  text-align: justify;
+}
+
+.container, .nav-container{
+    width: 80vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  /* TU JEST JUZ OSOBNY KOD */
+/* ---------------------navigation-header--------------------- */
+  .page-header {
+    background: var(--gradient);
+    /* background-image: url(icon/model.jpg); */
+  }
+  
+  nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(252,238,209, 0.5);
+  }
+  
+   .nav-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-weight: 600;
+    }
+  
+    nav a{
+      color: var(--header-font-color);
+      position: relative;
+      padding: 10px;
+    }
+  
+    nav a::after{
+      content: "";
+      height: 4px;
+      width: 0;
+      background: #00ced1;
+      border-radius: 4px;
+      /* background: rgb(58,116,80); */
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: width 0.3s linear;
+    }
+  
+    a:hover::after{
+      width: 100%;
+    }
+  
+    .nav-links{
+      display: flex;
+      justify-content: space-around;
+      padding: 2vw;
+    }
+  
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* ---------------------content-header--------------------- */
+    .about-section{
+      margin-top: 100px;
+      padding-top: 7vh;
+      padding-bottom: 14vh;
+    }
+  
+    .about-image-wrapper{
+      background:#00ced1;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  
+    .about-image-wrapper img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  
+   .header-name,h1, h3, .paragraph--header{
+      font-weight: 700;
+      text-align: center;
+    }
+  
+    .header-name, .header-subtitle, .paragraph--header{
+      color: var(--header-font-color);
+    }
+    .header-name{
+      font-size: 3em;
+      margin: 0;
+      font-style: italic;
+    }
+  
+    .header-subtitle{
+      width: 400px;
+      background: rgba(252,238,209, 0.3);
+      margin: auto;
+    }
+  
+    .paragraph--header{
+      font-weight: 400;
+      padding-bottom: 0;
+    }
+  
+    .social-ikon{
+      display: flex;
+      justify-content: center;
+      margin: 30px;
+    }
+  
+    .social-ikon a{
+      text-decoration: none;
+      margin-right: 30px;
+    }
+  
+    .social-ikon a:last-child{
+      margin-right: 0;
+    }
+  
+    /* ---------------------end of header--------------------- */
+
+
+    /* ZNóW BYC MOZE WSPOLNY KOD SPRAWDZ!!!!!!!*/
+     /* ---------------------content-header--------------------- */
+  .about-section{
+    margin-top: 100px;
+    padding-top: 7vh;
+    padding-bottom: 14vh;
+  }
+
+  .about-image-wrapper{
+    background:#00ced1;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .about-image-wrapper img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+ .header-name,h1, h3, .paragraph--header{
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .header-name, .header-subtitle, .paragraph--header{
+    color: var(--header-font-color);
+  }
+  .header-name{
+    font-size: 3em;
+    margin: 0;
+    font-style: italic;
+  }
+
+  .header-subtitle{
+    width: 400px;
+    background: rgba(252,238,209, 0.3);
+    margin: auto;
+  }
+
+  .paragraph--header{
+    font-weight: 400;
+    padding-bottom: 0;
+  }
+
+  .social-ikon{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  .social-ikon a{
+    text-decoration: none;
+    margin-right: 30px;
+  }
+
+  .social-ikon a:last-child{
+    margin-right: 0;
+  }
+
+  /* ---------------------end of header--------------------- */

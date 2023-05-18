@@ -1,0 +1,408 @@
+:root {
+  --primary-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cormorant', serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 100px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: .5s all;
+}
+
+p, ul {
+  text-align: justify;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: justify;
+  text-align: center;
+}
+
+
+.container,
+.nav-container {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* ---------------------navigation-header--------------------- */
+.page-header {
+  background-image: url(../icon/model.jpg);
+  background-color: var(--primary-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  top: -150px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 252, 247, 0.9);
+  z-index: 2;
+  /*USTAWIA MI NAWIGACJE TAK, ŻE JEST NA ELEMENTACH NIE POD NIMI*/
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-weight: 600;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 2vw;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------content-header--------------------- */
+.about-section {
+  margin-top: 220px;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-name,
+h1,
+h3,
+.paragraph-header,
+.paragraph-offer{
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-name,
+.header-subtitle,
+.paragraph-header {
+  color: #ffffff;
+}
+
+.header-name {
+  font-size: 4em;
+  /* margin: 0; */
+  font-style: italic;
+}
+
+.header-subtitle {
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 400px;
+  margin: auto;
+}
+
+.paragraph-header {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.social-ikon {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.social-ikon a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.social-ikon a:last-child {
+  margin-right: 0;
+}
+
+/* ---------------------end of header--------------------- */
+
+/* ---------------------section-one---------------------*/
+
+.section-one,
+.section-two {
+  position: relative;
+  top: -200px;
+}
+
+.decorative-line {
+  display: inline-block;
+  border-left: var(--primary-color) 1px solid;
+  height: 50px;
+}
+
+.paragraph-section-one,
+.list-section-one {
+  margin-bottom: 1.5em;
+}
+
+.paragraph-last-of-type {
+  margin-bottom: 200px;
+}
+
+.image-section-one {
+  background-image: url(.../icon/modelkaKopia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+}
+
+.flex-left {
+  flex-basis: 70%;
+}
+
+.flex-right {
+  flex-basis: 30%;
+  padding-left: 150px;
+}
+
+.flex-left, .flex-right {
+  margin-bottom: -200px;
+}
+
+
+.image-agnieszka {
+  width: 450px;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* ---------------------section-two--------------------- */
+
+.heading-offer, .p-opinions {
+  font-size: 3rem;
+  padding: 100px;
+  position: relative;
+}
+
+.heading-offer::before {
+  content: "";
+  display: block;
+  /* "warto jawnie zadeklarować "display: block"," DLACZEGO?*/
+  width: 150px;
+  height: 1px;
+  margin-left: 250px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.heading-offer::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin-right: 250px;
+  background: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+/* ---------------------flex-in-section-two--------------------- */
+.offer-flex-left,
+.offer-flex-middle,
+.offer-flex-right {
+  flex-basis: 33.33%;
+  flex-grow: 1;
+
+}
+
+.image-flex-left,
+.image-flex-middle,
+.image-flex-right {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.image-flex-left:hover,
+.image-flex-middle:hover,
+.image-flex-right:hover {
+  opacity: 0.5;
+  transition: .5s all;
+}
+
+.offer-flex-left,
+.offer-flex-right {
+  margin-top: 100px;
+
+}
+
+.offer-flex-middle {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.paragraph-section-two {
+  margin-top: 30px;
+}
+
+.image-offer{
+  margin-bottom: 30px;
+}
+
+.img, .img-left{
+  height: 300px;
+  width: auto;
+  margin-left: 20px;
+
+}
+
+/* ---------------------end of section-one--------------------- */
+
+/* ---------------------section-three--------------------- */
+
+.section-three {
+  margin-top: -500px; /* równa wysokości tła */
+}
+
+.flex-left-opinions {
+  flex-basis: 40%;
+  display: flex;
+  margin-right: 100px;
+  margin-top: 90px;
+}
+
+.flex-right-opinions{
+  flex-basis: 60%;
+  margin-top: -100px;
+}
+
+.image-background {
+  background-image: url(../icon/sesja_ciazowa.jpg);
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  opacity: .3;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.image-one-container {
+  margin-bottom: -200px;
+}
+
+.image-two-container {
+  margin-top: -120px;
+  margin-left: -60px;
+}
+
+.image-one,
+.image-two {
+  width: 200px;
+  height: auto;
+}
+.opinions{ 
+    margin: 0 200px 20px 0;
+}
+
+.opinions-two{
+  margin: 0 0 20px 200px;
+}
+.opinions-three{
+  margin-right: 50px 100px 20px 0;
+}
+
+.p-opinions{
+  text-align: center;
+  font-style: italic;
+}
+
+.p-opinions::before {
+  content: "";
+  display: block;
+  /* "warto jawnie zadeklarować "display: block"," DLACZEGO?*/
+  width: 100px;
+  height: 1px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -2;
+}
+.p-opinions::after {
+  content: "";
+  display: block;
+  /* "warto jawnie zadeklarować "display: block"," DLACZEGO?*/
+  width: 100px;
+  height: 1px;
+  background: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: -2;
+}
+
+.paragraph-opinion{
+  font-style: italic;
+}
+
+.link-opinions{
+  font-weight: 900;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+  border: 1px var(--primary-color) solid;
+}
+
+.link-to-opinions{
+  display: flex;
+  margin-left: 100px;
+  margin-top: -60px;
+}
