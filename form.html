@@ -7,11 +7,13 @@
     <title>Formularz</title>
 </head>
 <body>
-<!-- https://formsubmit.io/examples/. Mój form. nie zadziała bo strona nie jest online. a u mnie to zwykły plik lokalny otworzony w przegladarce-->
+<!--https://formsubmit.io/examples/ jest to serwis zewnętrzny!prywatne wiadomości idą gdzieś w eter, później do nas! Mój form. nie zadziała bo strona nie jest online.-->
 
 
-<!-- W atrybucie action znajduje sie URL, pod który zostaną wysłane dane w momencie zasubmitowania.
-w URL w miejscu "put your email here" wpisuje gdzie chce, aby był wysłane dane. -->
+<!-- Pod URL zostaną wysłane dane.
+wpisz adres w "put your email here". 
+Lepiej zalogować się na str.formsubmit i dostać id. mail ukryty-ochrona przed spamerskimi atakami
+Kod <input name="_formsubmit_id" type="text" style="display:none"-->
     <form action="https://formsubmit.io/send/put your email here" method="POST">
         <label for="mail">Twój e-mail</label>
         <input
@@ -27,6 +29,9 @@ w URL w miejscu "put your email here" wpisuje gdzie chce, aby był wysłane dane
         rows="5"
         placeholder="Wpisz wiadomość">
         </textarea>
+
+        <!-- KOD TEN ↓ ustawia nam naszą stronę jako docelową po przekierowaniu w momencie wysłania wiadomości. (str dzięki, że napisałeś)
+            <input name="_redirect" type="hidden" id="name" value="https://your website url"> -->
 
         <input value="Wyślij" type="submit"> </button>
     </form>
