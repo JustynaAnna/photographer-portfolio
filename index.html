@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header" id="page-header">
         <nav>
             <div class="nav-container">
                 <a href="#offer">Oferta</a>
@@ -26,7 +26,7 @@
                 <a href="#name" class="name">Agnieszka Doktór</a>
                 <a href="#pricing">Cennik</a>
                 <a href="#opinions">Opinie</a>
-                <a href="#">Kontakt</a>
+                <a href="form.html" target="_blank">Kontakt</a>
             </div>
         </nav>
 
@@ -46,7 +46,7 @@
                 </a>
                 <a href="#">
                     <img src="icon/portfolio2.png" alt="my portfolio icon"
-                        title="Check sign icons created by afif fudin - Flaticon">
+                        title="Portfolio-Check sign icons created by afif fudin - Flaticon">
                 </a>
                 <a href="https://www.facebook.com/Ordoktor" target="_blank">
                     <img src="icon/facebook2.png" alt="facebook icon"
@@ -57,7 +57,6 @@
     </header>
 
     <section class="section-one">
-
         <div class="container">
             <h1 id="name"> Profesjonalny fotograf dla Ciebie i Twojej rodziny</h1>
             <div class="decorative-line"></div>
@@ -103,7 +102,7 @@
             </div>
 
         </div>
-
+        <div class="image-section-one"></div>
     </section>
 
     <section class="section-two">
@@ -112,18 +111,18 @@
             <div class="flex-offer">
 
                 <div class="image-offer">
-                    <img class="img-left" src="icon/pakiet_zdj.jpg" alt="">
+                    <img class="img-left" src="icon/pakiet_zdj.jpg" alt="Mini: 300zł za 10 zdjęć.">
                     <img class="img" src="icon/mini_pakiet.jpg" alt="">
                 </div>
-    
+
                 <div class="image-offer">
-                    <img class="img-left"src="icon/plus_mini.jpg" alt="">
-                    <img class="img"src="icon/pakiet_zdj2.jpg" alt="">       
+                    <img class="img-left" src="icon/plus_mini.jpg" alt="Plus: 350zł za 20 zdjęć.">
+                    <img class="img" src="icon/pakiet_zdj2.jpg" alt="">
                 </div>
 
                 <div class="image-offer">
                     <img class="img" src="icon/pakiet_zdj3.jpg" alt="">
-                    <img class="img-left" src="icon/maxi.jpg" alt="">
+                    <img class="img-left" src="icon/maxi.jpg" alt="Maxi: 750zł za 75 zdjęć.">
                 </div>
             </div>
             <h2 id="offer" class="heading-offer">Oferta</h2>
@@ -170,7 +169,7 @@
             </div>
         </div>
     </section>
-   
+
     <section class="section-three">
         <div class="image-background"></div>
         <div class="container">
@@ -186,30 +185,65 @@
                 </div>
                 <div class="flex-right-opinions">
                     <div class="opinions">
-                        <p class="paragraph-opinion">"Agnieszka, chciałam Ci tylko napisać, że zdjęcia z miodami i portrety są fenomenalne."</p>
+                        <p class="paragraph-opinion">"Agnieszka, chciałam Ci tylko napisać, że zdjęcia z miodami i
+                            portrety są fenomenalne."</p>
                         <br>
-                        <p class="paragraph-opinion">"Jesteśmy bardzo zadowoleni, w szczególności ja! Zdjęcia są cudowne.<span style="color: red">&#x2764;</span>"</p>
+                        <p class="paragraph-opinion">"Jesteśmy bardzo zadowoleni, w szczególności ja! Zdjęcia są
+                            cudowne."</p>
                     </div>
                     <div class="opinions-two">
-                        <p class="paragraph-opinion">"Oglądam właśnie i się zastanawiam, które wybrać. Nie sądziłem, że aż tak dobrze
+                        <p class="paragraph-opinion">"Oglądam właśnie i się zastanawiam, które wybrać. Nie sądziłem, że
+                            aż tak dobrze
                             wyjdzie."</p>
-                            <br>
-                        <p class="paragraph-opinion">"Jeszcze jakieś dobierzemy, bo są przepiękne.<span style="color: red">&#x2764;</span>Dziękujemy Ci."</p>
+                        <br>
+                        <p class="paragraph-opinion">"Jeszcze jakieś dobierzemy, bo są przepiękne.Dziękujemy Ci."</p>
                         <a href=""></a>
                     </div>
                     <div class="opinions-three">
-                        <p class="paragraph-opinion">"Super niezapomniane chwile podczas sesji i jeszcze piękniejsze podczas oglądania gotowych zdjęć.
-                            <br>Polecam z całego serca, pełen profesjonalizm!"</p>
+                        <p class="paragraph-opinion">"Super niezapomniane chwile podczas sesji i jeszcze piękniejsze
+                            podczas oglądania gotowych zdjęć.
+                            <br>Polecam z całego serca, pełen profesjonalizm!"
+                        </p>
                         <br>
-                        <p class="paragraph-opinion">"Polecam w 100%. Przepiękne zdjęcia. Aga jest fotografem z powołania.
-                            <br>Bardzo sympatyczna i miła atmosfera podczas sesji. Można się poczuć kompletnie wyluzowanym.
-                            <br>Również na plus szybka obróbka zdjęć. Na pewno jeszcze nie raz skorzystam z jej usług"</p>
+                        <p class="paragraph-opinion">"Polecam w 100%. Przepiękne zdjęcia. Aga jest fotografem z
+                            powołania.
+                            <br>Bardzo sympatyczna i miła atmosfera podczas sesji. Można się poczuć kompletnie
+                            wyluzowanym.
+                            <br>Również na plus szybka obróbka zdjęć. Na pewno jeszcze nie raz skorzystam z jej usług"
+                        </p>
                     </div>
                 </div>
             </div>
-            <a class="link-to-opinions" href="https://ordoktor.myportfolio.com/kopia-cennik" target="_blank"><span class="link-opinions">Zobacz opinie</span></a>
+            <a class="link-to-opinions" href="https://ordoktor.myportfolio.com/kopia-cennik" target="_blank"><span
+                    class="link-opinions">Zobacz opinie</span></a>
         </div>
     </section>
+    <footer role="contentinfo" aria-label="Footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">O mnie</a>
+                <a href="#">Kontakt</a>
+                <a href="#page-header">Home</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">
+                    <img src="icon/footer-instagram.png" alt="instagram icon"
+                        title="Instagram icons created by Payungkead - Flaticon">
+                </a>
+                <a href="https://www.facebook.com/Ordoktor" target="_blank">
+                    <img src="icon/footer-facebook.png" alt="facebook icon"
+                        title="Facebook icons created by justicon - Flaticon">
+                </a>
+            </div>
+            <div>
+                <p>Made with</p>
+                <a href="#">
+                    <img src="icon/footer-love.png" alt=""
+                    title="Heart icons created by Laisa Islam Ani - Flaticon" aria-hidden="true">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

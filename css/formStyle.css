@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --primary-color: #008000;
+  }
+
+body {
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+button{
+    padding:10px;
+    border: var(--primary-color) 1px solid;
+    color: var(--primary-color);
+}
+
+.img{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding: 130px;
+}
+
+.img::before{
+    content: "";
+    background-image: url(../icon/las2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .2;
+    pointer-events: none;  /*w kodzie formularz jest pod tłem. Aby jednak form.był aktywny musze dodać taką regułę*/
+}
+

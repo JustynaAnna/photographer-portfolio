@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@600;800&family=Roboto:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <title>Formularz</title>
+
 </head>
+
 <body>
-<!--https://formsubmit.io/examples/ jest to serwis zewnętrzny!prywatne wiadomości idą gdzieś w eter, później do nas! Mój form. nie zadziała bo strona nie jest online.-->
+    <!--https://formsubmit.io/examples/ jest to serwis zewnętrzny!prywatne wiadomości idą gdzieś w eter, później do nas! Mój form. nie zadziała bo strona nie jest online.-->
 
 
-<!-- Pod URL zostaną wysłane dane.
+    <!-- Pod URL zostaną wysłane dane.
 wpisz adres w "put your email here". 
 Lepiej zalogować się na str.formsubmit i dostać id. mail ukryty-ochrona przed spamerskimi atakami
 Kod <input name="_formsubmit_id" type="text" style="display:none"-->
+   
+<div class="img">
+<h1>Skontaktuj się ze mną!</h1>
     <form action="https://formsubmit.io/send/put your email here" method="POST">
-        <label for="mail">Twój e-mail</label>
-        <input
-        id="mail"
-        name="mail"
-        type="text"
-        placeholder="Wpisz swój ader e-mail">
 
-        <label for="msg">Twoja wiadomość</label>
-        <textarea
-        id="msg"
-        name="msg"
-        rows="5"
-        placeholder="Wpisz wiadomość">
-        </textarea>
+        <div class="form-group">
+            <label for="contact-email">Twój e-mail</label>
+            <input id="contact-email" name="mail" type="email" placeholder="Wpisz swój adres e-mail" required>
+
+            <label for="msg">Twoja wiadomość</label>
+            <textarea id="msg"  name="msg" rows="10" placeholder="Wpisz wiadomość" required>
+            </textarea>
+        </div>
 
         <!-- KOD TEN ↓ ustawia nam naszą stronę jako docelową po przekierowaniu w momencie wysłania wiadomości. (str dzięki, że napisałeś)
             <input name="_redirect" type="hidden" id="name" value="https://your website url"> -->
 
-        <input value="Wyślij" type="submit"> </button>
+        <button value="Wyślij" type="submit">Wyślij</button>
     </form>
+</div>
 </body>
+
 </html>
