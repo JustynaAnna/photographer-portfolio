@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 767px)" href="css/small.css">
+    <!-- <link rel="stylesheet" media="(min-width: 768px)" href="css/tablet.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@600;800&family=Roboto:wght@300;400;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/7c39d39f84.js" crossorigin="anonymous"></script>
     <title>Family moments&lifestyle</title>
 </head>
@@ -19,14 +24,17 @@
 <body>
     <header class="page-header" id="page-header">
         <nav>
-            <div class="nav-container">
-                <a href="#offer">Oferta</a>
-                <a href="https://ordoktor.myportfolio.com/work" target="_blank">Portfolio</a>
-                <a href="https://ordoktor.myportfolio.com/kopia-kontakt" target="_blank">Nasza współpraca</a>
-                <a href="#name" class="name">Agnieszka Doktór</a>
-                <a href="#pricing">Cennik</a>
-                <a href="#opinions">Opinie</a>
-                <a href="form.html" target="_blank">Kontakt</a>
+            <div class="collapsible ">
+                <i class="menu_icon fa-solid fa-bars"></i>
+                <div class="nav-container collapsible-content">
+                    <a href="#offer">Oferta</a>
+                    <a href="https://ordoktor.myportfolio.com/work" target="_blank">Portfolio</a>
+                    <a href="https://ordoktor.myportfolio.com/kopia-kontakt" target="_blank">Nasza współpraca</a>
+                    <a href="#name" class="name">Agnieszka Doktór</a>
+                    <a href="#pricing">Cennik</a>
+                    <a href="#opinions">Opinie</a>
+                    <a href="form.html" target="_blank">Kontakt</a>
+                </div>
             </div>
         </nav>
 
@@ -244,6 +252,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let collapsible = document.querySelectorAll('.collapsible');
+        collapsible.forEach((item) =>
+        {
+            item.addEventListener('click', function(){
+                this.classList.toggle('collapsible-expanded');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
