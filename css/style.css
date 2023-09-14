@@ -26,7 +26,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-a {
+a, .paragraph-offer{
   text-decoration: none;
   color: var(--primary-color);
   transition: .5s all;
@@ -84,16 +84,18 @@ nav {
   font-weight: 600;
 }
 
-/* NIE WIEM CZEMU musze dodać @media. inaczej reguła nie działa */
 @media (min-width: 768px) {
   nav .menu_icon {
     display: none;
   }
 }
 
+nav a:hover, .paragraph-offer:hover {
+  transform: scale(1.3);
+}
 
-nav a:hover {
-  transform: scale(1.2);
+.paragraph-offer{
+  color: rgb(1, 1, 160);
 }
 
 .nav-links {
@@ -146,7 +148,6 @@ h3,
 
 .header-name {
   font-size: 4em;
-  /* margin: 0; */
   font-style: italic;
 }
 
@@ -194,12 +195,16 @@ h3,
 }
 
 .paragraph-section-one,
-.list-section-one {
+.list-section-one,
+.paragraph-last-of-type {
   margin-bottom: 1.5em;
+  font-style: italic; 
+  font-weight: bold;
 }
 
 .paragraph-last-of-type {
-  margin-bottom: 200px;
+  margin-bottom: 260px;
+
 }
 
 .image-section-one {
@@ -276,7 +281,6 @@ h3,
 .heading-offer::before {
   content: "";
   display: block;
-  /* "warto jawnie zadeklarować "display: block"," DLACZEGO?*/
   width: 150px;
   height: 1px;
   margin-left: 250px;
@@ -333,6 +337,7 @@ h3,
 .offer-flex-middle {
   margin-right: 50px;
   margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .paragraph-section-two {
